@@ -3,7 +3,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import SaveIcon from '@mui/icons-material/Save';
 import EditIcon from '@mui/icons-material/Edit';
 
-import './styles.css';
+import './styles.scss';
 import TextField from "../TextField";
 
 type Props = {

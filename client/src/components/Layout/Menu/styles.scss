@@ -1,0 +1,20 @@
+.layout-menu {
+  display: flex;
+  align-items: center;
+  background: #0fbf0f;
+  margin: 0;
+  padding: 20px 12px;
+
+  li {
+    list-style: none;
+    margin-right: 25px;
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}

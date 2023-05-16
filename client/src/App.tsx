@@ -1,10 +1,21 @@
-import './App.css';
-import TodoList from "./components/TodoList";
+import './App.scss';
+import {Route, Routes} from "react-router-dom";
+
+import Layout from "./components/Layout";
+import Dashboard from "./pages/Dashboard";
+import TodoList from "./pages/TodoList";
 
 function App() {
     return (
-        <div>
-            <TodoList />
+        <div className="app-container">
+            <Routes>
+                <Route path="/" element={<Layout />}>
+                    <Route index element={<TodoList />} />
+                    <Route path="dashboard" element={<Dashboard />} />
+
+                    <Route path="*" element={<div />} />
+                </Route>
+            </Routes>
         </div>
   )
 }
