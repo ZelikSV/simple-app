@@ -9,12 +9,7 @@ $ yarn install
 ```
 
 ## Running the DB
-If you start it first time you need to create docker container:
 
-```bash
-yarn run db:init
-```
-Then you can run it:
 ```bash
 yarn run db:start
 ```
